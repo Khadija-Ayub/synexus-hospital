@@ -3,6 +3,8 @@ import DoctorCard from '../cards/DoctorCard'
 import Button from '../ui/Button'
 import { doctors } from '../../data/doctors'
 
+const featuredDoctors = doctors.slice(0, 6)
+
 export default function DoctorsPreview() {
   return (
     <section className="py-20 lg:py-24 bg-muted/40">
@@ -15,7 +17,7 @@ export default function DoctorsPreview() {
         />
 
         <div className="mt-10 grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6">
-          {doctors.map((doc) => (
+          {featuredDoctors.map((doc) => (
             <DoctorCard key={doc.slug} {...doc} />
           ))}
         </div>

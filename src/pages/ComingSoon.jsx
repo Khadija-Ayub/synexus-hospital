@@ -8,6 +8,7 @@ export default function ComingSoon({ title }) {
       <p className="mt-3 text-text-muted">
         This page is part of an upcoming development phase.
       </p>
+      
     </div>
   )
 }

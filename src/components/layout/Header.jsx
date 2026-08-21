@@ -4,6 +4,7 @@ import { Menu, X, Cross } from 'lucide-react'
 import Button from '../ui/Button'
 
 const navLinks = [
+  { to: '/', label: 'Home' },
   { to: '/about', label: 'About' },
   { to: '/departments', label: 'Departments' },
   { to: '/doctors', label: 'Doctors' },
@@ -38,7 +39,7 @@ export default function Header() {
         <div className="flex items-center justify-between h-16">
           <Link to="/" className="flex items-center gap-2 font-bold text-lg text-primary">
             <span className="flex h-8 w-8 items-center justify-center rounded-lg bg-primary text-white">
-              <Cross className="h-4.5 w-4.5" aria-hidden="true" />
+              <Cross className="h-[18px] w-[18px]" aria-hidden="true" />
             </span>
             SYNEXUS
             <span className="hidden sm:inline font-medium text-text-muted">Medical Center</span>

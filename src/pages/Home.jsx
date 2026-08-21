@@ -11,13 +11,17 @@ export default function Home() {
   return (
     <>
       <Hero />
+
       <QuickAccess />
-      <DepartmentsPreview />
-      <Statistics />
-      <DoctorsPreview />
-      <FacilitiesPreview />
-      <Testimonials />
-      <FinalCTA />
+
+      <main>
+        <DepartmentsPreview />
+        <Statistics />
+        <DoctorsPreview />
+        <FacilitiesPreview />
+        <Testimonials />
+        <FinalCTA />
+      </main>
     </>
   )
 }

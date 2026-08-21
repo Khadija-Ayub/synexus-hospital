@@ -4,6 +4,11 @@ import Header from './components/layout/Header'
 import Footer from './components/layout/Footer'
 import Home from './pages/Home'
 import ComingSoon from './pages/ComingSoon'
+import About from './pages/About'
+import Departments from './pages/Departments'
+import DepartmentDetail from './pages/DepartmentDetail'
+import Doctors from './pages/Doctors'
+import DoctorDetail from './pages/DoctorDetail'
 
 function App() {
   return (
@@ -13,11 +18,11 @@ function App() {
       <main className="flex-1">
         <Routes>
           <Route path="/" element={<Home />} />
-          <Route path="/about" element={<ComingSoon title="About" />} />
-          <Route path="/departments" element={<ComingSoon title="Departments" />} />
-          <Route path="/departments/:slug" element={<ComingSoon title="Department Detail" />} />
-          <Route path="/doctors" element={<ComingSoon title="Doctors" />} />
-          <Route path="/doctors/:slug" element={<ComingSoon title="Doctor Profile" />} />
+          <Route path="/about" element={<About />} />
+          <Route path="/departments" element={<Departments />} />
+          <Route path="/departments/:departmentId" element={<DepartmentDetail />} />
+          <Route path="/doctors" element={<Doctors />} />
+          <Route path="/doctors/:doctorId" element={<DoctorDetail />} />
           <Route path="/wards" element={<ComingSoon title="Wards & Rooms" />} />
           <Route path="/pharmacy" element={<ComingSoon title="Pharmacy" />} />
           <Route path="/services" element={<ComingSoon title="Services & Facilities" />} />

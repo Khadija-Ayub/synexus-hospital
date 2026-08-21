@@ -1,4 +1,9 @@
-import { Ambulance, Stethoscope, LayoutGrid, CalendarCheck } from 'lucide-react'
+import {
+  Ambulance,
+  Stethoscope,
+  LayoutGrid,
+  CalendarCheck,
+} from 'lucide-react'
 import { Link } from 'react-router-dom'
 
 const items = [
@@ -34,22 +39,35 @@ const items = [
 
 export default function QuickAccess() {
   return (
-    <section className="relative -mt-10 sm:-mt-14 z-10">
+    <section className="relative z-20 -mt-16 lg:-mt-20">
       <div className="mx-auto max-w-[var(--container-max)] px-6">
-        <div className="grid grid-cols-2 lg:grid-cols-4 gap-4 rounded-2xl bg-surface p-4 shadow-lg border border-border">
-          {items.map(({ icon: Icon, title, description, to, tone }) => (
-            <Link
-              key={title}
-              to={to}
-              className="flex flex-col items-center text-center gap-2 rounded-xl p-4 hover:bg-muted transition-colors"
-            >
-              <span className={`flex h-11 w-11 items-center justify-center rounded-lg ${tone}`}>
-                <Icon className="h-5 w-5" aria-hidden="true" />
-              </span>
-              <span className="text-sm font-semibold text-text">{title}</span>
-              <span className="text-xs text-text-muted">{description}</span>
-            </Link>
-          ))}
+        <div className="grid grid-cols-2 gap-4 rounded-2xl border border-border bg-surface p-4 shadow-lg lg:grid-cols-4">
+          {items.map(
+            ({ icon: Icon, title, description, to, tone }) => (
+              <Link
+                key={title}
+                to={to}
+                className="flex flex-col items-center gap-2 rounded-xl p-4 text-center transition-colors hover:bg-muted"
+              >
+                <span
+                  className={`flex h-11 w-11 items-center justify-center rounded-lg ${tone}`}
+                >
+                  <Icon
+                    className="h-5 w-5"
+                    aria-hidden="true"
+                  />
+                </span>
+
+                <span className="text-sm font-semibold text-text">
+                  {title}
+                </span>
+
+                <span className="text-xs text-text-muted">
+                  {description}
+                </span>
+              </Link>
+            )
+          )}
         </div>
       </div>
     </section>
