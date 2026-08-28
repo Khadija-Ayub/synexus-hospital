@@ -21,7 +21,7 @@ export const historyTimeline = [
 ]
 
 export const leadership = {
-  name: 'Dr. Aamir Rahman',
+  name: 'Dr. Bilal Hassan',
   position: 'Medical Director',
   image: 'https://images.unsplash.com/photo-1622253692010-333f2da6031d?w=400&h=400&fit=crop&auto=format&q=80',
   message: 'At SYNEXUS Medical Center, we believe healthcare is more than treating illness — it\'s about earning the trust of every patient who walks through our doors. Our team is committed to combining clinical excellence with genuine compassion, every single day.',

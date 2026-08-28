@@ -9,6 +9,13 @@ import Departments from './pages/Departments'
 import DepartmentDetail from './pages/DepartmentDetail'
 import Doctors from './pages/Doctors'
 import DoctorDetail from './pages/DoctorDetail'
+import Wards from './pages/Wards'
+import Pharmacy from './pages/Pharmacy'
+import Services from './pages/Services'
+import Appointment from './pages/Appointment'
+import News from './pages/News'
+import NewsDetail from './pages/NewsDetail'
+import Contact from './pages/Contact'
 
 function App() {
   return (
@@ -23,13 +30,13 @@ function App() {
           <Route path="/departments/:departmentId" element={<DepartmentDetail />} />
           <Route path="/doctors" element={<Doctors />} />
           <Route path="/doctors/:doctorId" element={<DoctorDetail />} />
-          <Route path="/wards" element={<ComingSoon title="Wards & Rooms" />} />
-          <Route path="/pharmacy" element={<ComingSoon title="Pharmacy" />} />
-          <Route path="/services" element={<ComingSoon title="Services & Facilities" />} />
-          <Route path="/appointment" element={<ComingSoon title="Appointment Enquiry" />} />
-          <Route path="/news" element={<ComingSoon title="News & Health Updates" />} />
-          <Route path="/news/:slug" element={<ComingSoon title="Article" />} />
-          <Route path="/contact" element={<ComingSoon title="Contact" />} />
+          <Route path="/wards" element={<Wards />} />
+          <Route path="/pharmacy" element={<Pharmacy />} />
+          <Route path="/services" element={<Services />} />
+          <Route path="/appointment" element={<Appointment />} />
+          <Route path="/news" element={<News />} />
+          <Route path="/news/:slug" element={<NewsDetail />} />
+          <Route path="/contact" element={<Contact />} />
         </Routes>
       </main>
       <Footer />

@@ -1,8 +1,14 @@
-import { Ambulance, ScanLine, FlaskConical, HeartPulse, Syringe, Truck } from 'lucide-react'
+import {
+  Ambulance, ScanLine, FlaskConical, HeartPulse, Syringe, Truck,
+  Radiation, Utensils, ParkingSquare, Accessibility,
+} from 'lucide-react'
 
-const icons = { Ambulance, ScanLine, FlaskConical, HeartPulse, Syringe, Truck }
+const icons = {
+  Ambulance, ScanLine, FlaskConical, HeartPulse, Syringe, Truck,
+  Radiation, Utensils, ParkingSquare, Accessibility,
+}
 
-export default function ServiceCard({ icon, name, description }) {
+export default function ServiceCard({ icon, name, shortDescription }) {
   const Icon = icons[icon] ?? HeartPulse
 
   return (
@@ -12,7 +18,7 @@ export default function ServiceCard({ icon, name, description }) {
       </span>
       <div>
         <h3 className="text-base font-semibold text-text">{name}</h3>
-        <p className="mt-1 text-sm text-text-muted leading-relaxed">{description}</p>
+        <p className="mt-1 text-sm text-text-muted leading-relaxed">{shortDescription}</p>
       </div>
     </div>
   )

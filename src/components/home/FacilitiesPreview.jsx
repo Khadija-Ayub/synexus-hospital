@@ -2,6 +2,8 @@ import SectionHeading from '../ui/SectionHeading'
 import ServiceCard from '../cards/ServiceCard'
 import { services } from '../../data/services'
 
+const previewServices = services.slice(0, 6)
+
 export default function FacilitiesPreview() {
   return (
     <section className="py-20 lg:py-24">
@@ -13,8 +15,8 @@ export default function FacilitiesPreview() {
         />
 
         <div className="mt-10 grid grid-cols-1 sm:grid-cols-2 gap-2">
-          {services.map((service) => (
-            <ServiceCard key={service.name} {...service} />
+          {previewServices.map((service) => (
+            <ServiceCard key={service.id} {...service} />
           ))}
         </div>
       </div>

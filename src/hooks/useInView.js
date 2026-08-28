@@ -1,6 +1,6 @@
 import { useEffect, useRef, useState } from 'react'
 
-export function useInView(options = { threshold: 0.15, triggerOnce: true }) {
+export function useInView(options = { threshold: 0.05, rootMargin: '0px 0px -80px 0px', triggerOnce: true }) {
   const ref = useRef(null)
   const [isInView, setIsInView] = useState(false)
 

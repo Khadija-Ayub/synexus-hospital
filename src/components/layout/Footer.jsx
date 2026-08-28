@@ -10,6 +10,8 @@ import {
 const quickLinks = [
   { to: '/about', label: 'About Us' },
   { to: '/doctors', label: 'Find a Doctor' },
+  { to: '/wards', label: 'Wards & Rooms' },
+  { to: '/pharmacy', label: 'Pharmacy' },
   { to: '/appointment', label: 'Book Appointment' },
   { to: '/news', label: 'Health Updates' },
   { to: '/contact', label: 'Contact' },

@@ -1,8 +1,12 @@
 export const services = [
-  { icon: 'Ambulance', name: 'Emergency Department', description: 'Rapid response critical care, available around the clock.' },
-  { icon: 'ScanLine', name: 'Diagnostic Imaging', description: 'Advanced imaging including X-ray, CT, and MRI.' },
-  { icon: 'FlaskConical', name: 'Laboratory', description: 'Fast, accurate diagnostic and pathology testing.' },
-  { icon: 'HeartPulse', name: 'ICU', description: 'Round-the-clock critical care monitoring and support.' },
-  { icon: 'Syringe', name: 'Operation Theatres', description: 'Modern surgical suites for a wide range of procedures.' },
-  { icon: 'Truck', name: 'Ambulance Services', description: 'Rapid, equipped transport for emergencies.' },
+  { id: 'emergency', icon: 'Ambulance', name: 'Emergency Department', shortDescription: 'Rapid response critical care, available around the clock.', description: 'Our Emergency Department is staffed 24/7 to handle urgent and life-threatening conditions, with rapid triage and direct access to diagnostics and critical care.' },
+  { id: 'diagnostics', icon: 'ScanLine', name: 'Diagnostic Imaging', shortDescription: 'Advanced imaging including X-ray, CT, and MRI.', description: 'Our imaging center offers a full range of diagnostic services with modern equipment and fast turnaround for referring physicians and patients alike.' },
+  { id: 'laboratory', icon: 'FlaskConical', name: 'Laboratory', shortDescription: 'Fast, accurate diagnostic and pathology testing.', description: 'Our on-site laboratory provides a broad range of diagnostic testing with an emphasis on accuracy and quick reporting.' },
+  { id: 'radiology', icon: 'Radiation', name: 'Radiology', shortDescription: 'Comprehensive radiology services supporting diagnosis and treatment.', description: 'Our radiology team works closely with every department to provide timely, accurate imaging interpretation as part of your care plan.' },
+  { id: 'icu', icon: 'HeartPulse', name: 'ICU', shortDescription: 'Round-the-clock critical care monitoring and support.', description: 'Our Intensive Care Unit provides continuous monitoring and specialized care for critically ill patients, supported by an experienced critical care team.' },
+  { id: 'operation-theatres', icon: 'Syringe', name: 'Operation Theatres', shortDescription: 'Modern surgical suites for a wide range of procedures.', description: 'Our operation theatres are equipped with modern surgical technology and supported by experienced surgical and anesthesia teams.' },
+  { id: 'ambulance', icon: 'Truck', name: 'Ambulance Services', shortDescription: 'Rapid, equipped transport for emergencies.', description: 'Our ambulance service provides rapid, equipped emergency transport, coordinated directly with our Emergency Department for seamless handover.' },
+  { id: 'cafeteria', icon: 'Utensils', name: 'Cafeteria', shortDescription: 'On-site dining for patients, visitors, and staff.', description: 'Our cafeteria offers a variety of meal options for patients, visiting families, and staff throughout the day.' },
+  { id: 'parking', icon: 'ParkingSquare', name: 'Parking', shortDescription: 'Convenient on-site parking for visitors and patients.', description: 'Ample on-site parking is available for patients and visitors, including spaces close to the main entrance.' },
+  { id: 'accessibility', icon: 'Accessibility', name: 'Accessibility', shortDescription: 'Wheelchair-accessible facilities throughout the hospital.', description: 'Our facilities are designed to be accessible throughout, including ramps, accessible restrooms, and elevator access to all floors.' },
 ]
