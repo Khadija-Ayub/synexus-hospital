@@ -136,7 +136,11 @@ export default function Header() {
           </nav>
 
           <div className="flex items-center gap-3">
-            <Button to="/appointment" variant="primary" className="hidden sm:inline-flex">
+            <Button
+              to="/appointment"
+              variant="primary"
+              className="hidden md:inline-flex text-sm px-4 py-2"
+            >
               Book Appointment
             </Button>
             <button
@@ -156,7 +160,7 @@ export default function Header() {
       {/* Mobile nav */}
       <div
         id="mobile-menu"
-        className={`lg:hidden overflow-hidden border-t border-border bg-surface transition-[max-height] duration-300 ease-in-out ${isOpen ? 'max-h-96' : 'max-h-0 border-t-0'
+        className={`lg:hidden overflow-y-auto border-t border-border bg-surface transition-[max-height] duration-300 ease-in-out ${isOpen ? 'max-h-[75vh]' : 'max-h-0 border-t-0'
           }`}
       >
         <nav className="flex flex-col gap-1 px-6 py-4" aria-label="Mobile">

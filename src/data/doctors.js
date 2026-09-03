@@ -651,7 +651,11 @@ export function getDoctorBySlug(slug) {
 export function getDoctorsByIds(ids) {
   return doctors.filter((doctor) => ids.includes(doctor.id))
 }
-
+// src/data/doctors.js
+// Departments derive their doctor list from this function (by departmentId)
+// rather than a manually-maintained doctorIds array on each department —
+// this was changed after new doctors weren't appearing under their department
+// because the old list wasn't updated when a doctor was added.
 export function getDoctorsByDepartment(departmentId) {
   return doctors.filter((d) => d.departmentId === departmentId)
 }

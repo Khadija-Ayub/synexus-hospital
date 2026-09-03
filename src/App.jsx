@@ -1,9 +1,9 @@
 import { Routes, Route } from 'react-router-dom'
+import { useState } from 'react'
 import EmergencyBar from './components/layout/EmergencyBar'
 import Header from './components/layout/Header'
 import Footer from './components/layout/Footer'
 import Home from './pages/Home'
-import ComingSoon from './pages/ComingSoon'
 import About from './pages/About'
 import Departments from './pages/Departments'
 import DepartmentDetail from './pages/DepartmentDetail'
@@ -16,10 +16,18 @@ import Appointment from './pages/Appointment'
 import News from './pages/News'
 import NewsDetail from './pages/NewsDetail'
 import Contact from './pages/Contact'
+import SplashScreen from './components/SplashScreen'
+import SkipLink from './components/layout/SkipLink'
 
 function App() {
+  const [showSplash, setShowSplash] = useState(true)
+
+  if (showSplash) {
+    return <SplashScreen onFinish={() => setShowSplash(false)} />
+  }
   return (
     <div className="flex min-h-screen flex-col">
+      <SkipLink />
       <EmergencyBar />
       <Header />
       <main className="flex-1">
